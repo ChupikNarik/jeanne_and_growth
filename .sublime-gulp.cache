@@ -1,0 +1,1 @@
+{"C:\\xampp\\htdocs\\www\\new_am_page\\gulpfile.js": {"tasks": {"browser-sync": {"name": "browser-sync", "dependencies": ""}, "watch": {"name": "watch", "dependencies": ""}, "scripts": {"name": "scripts", "dependencies": ""}, "default": {"name": "default", "dependencies": ""}, "styles": {"name": "styles", "dependencies": ""}}, "sha1": "c31d00c6435d70f9ba3d662abd0303090fa0f434"}}

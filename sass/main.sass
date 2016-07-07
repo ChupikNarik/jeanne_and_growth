@@ -1,0 +1,767 @@
+@import "bourbon"
+@import "vars.sass"
+
+
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+
+.dropdown-menu
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: 1000
+    display: none
+    float: left
+    min-width: 160px
+    padding: 5px 0
+    margin: 2px 0 0
+    font-size: 14px
+    text-align: left
+    list-style: none
+    background-color: #fff
+    -webkit-background-clip: padding-box
+    background-clip: padding-box
+    border: 1px solid #ccc
+    border: 1px solid rgba(0, 0, 0, .15)
+    border-radius: 4px
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175)
+
+.dropdown-menu.pull-right
+    right: 0
+    left: auto
+
+.dropdown-menu .divider
+    height: 1px
+    margin: 9px 0
+    overflow: hidden
+    background-color: #e5e5e5
+
+.dropdown-menu>li>a
+    display: block
+    padding: 3px 20px
+    clear: both
+    font-weight: 400
+    line-height: 1.42857143
+    color: #333
+    white-space: nowrap
+
+.dropdown-menu>li>a:focus,
+.dropdown-menu>li>a:hover
+    color: #262626
+    text-decoration: none
+    background-color: #f5f5f5
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover
+    color: #fff
+    text-decoration: none
+    background-color: #337ab7
+    outline: 0
+
+.dropdown-menu>.disabled>a,
+.dropdown-menu>.disabled>a:focus,
+.dropdown-menu>.disabled>a:hover 
+    color: #777
+
+.btn-group .dropdown-toggle:active,
+.btn-group.open .dropdown-toggle
+    outline: 0
+
+.btn-group>.btn+.dropdown-toggle
+    padding-right: 8px
+    padding-left: 8px
+
+.btn-group>.btn-lg+.dropdown-toggle
+    padding-right: 12px
+    padding-left: 12px
+
+.btn-group.open .dropdown-toggle 
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+
+.btn-group.open .dropdown-toggle.btn-link
+    -webkit-box-shadow: none
+    box-shadow: none
+
+.btn-default
+    color: #333
+    background-color: #fff
+    border-color: #ccc
+
+.btn-default.focus,
+.btn-default:focus
+    color: #333
+    background-color: #e6e6e6
+    border-color: #8c8c8c
+
+.btn-default:hover
+    color: #333
+    background-color: #e6e6e6
+    border-color: #adadad
+
+.btn-default.active,
+.btn-default:active,
+.open>.dropdown-toggle.btn-default
+    color: #333
+    background-color: #e6e6e6
+    border-color: #adadad
+
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open>.dropdown-toggle.btn-default.focus,
+.open>.dropdown-toggle.btn-default:focus,
+.open>.dropdown-toggle.btn-default:hover
+    color: #333
+    background-color: #d4d4d4
+    border-color: #8c8c8c
+
+.btn-default.active,
+.btn-default:active,
+.open>.dropdown-toggle.btn-default
+    background-image: none
+
+.btn-default.disabled.focus,
+.btn-default.disabled:focus,
+.btn-default.disabled:hover,
+.btn-default[disabled].focus,
+.btn-default[disabled]:focus,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default.focus,
+fieldset[disabled] .btn-default:focus,
+fieldset[disabled] .btn-default:hover
+    background-color: #fff
+    border-color: #ccc
+
+.btn-default .badge
+    color: #fff
+    background-color: #333
+
+
+.glyphicon
+	position: relative
+	top: 1px
+	display: inline-block
+	font-family: 'Glyphicons Halflings'
+	font-style: normal
+	font-weight: 400
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.glyphicon-ok:before
+	content: "\e013"
+
+.clear
+	clear: both
+
+.new_menu
+	width: 100%
+	min-height: 75px
+	background: $menu_color
+	position: relative
+	z-index: 5
+	background: -webkit-linear-gradient(to right, $color_one, $color_two)
+	background: -o-linear-gradient(to right, $color_one, $color_two)
+	background: -moz-linear-gradient(to right, $color_one, $color_two)
+	background: linear-gradient(to right, $color_one, $color_two)
+	-webkit-box-shadow: $menu_shadows
+	-moz-box-shadow: $menu_shadows
+	box-shadow: $menu_shadows
+
+	.new_logo
+		text-decoration: none
+
+		img
+			margin-top: 9px
+
+	.show_new_menu
+		font-size: 25px
+		color: $white_text
+		display: none
+
+	ul.menu
+		margin: 0
+		padding: $padding_menu
+
+		ol
+			display: inline-block
+			vertical-align: middle
+			float: right
+			padding: 0
+
+		li
+			list-style: none
+			display: inline-block
+			vertical-align: middle
+			text-transform: uppercase
+			font-family: Open Sans
+			font-size: 11px
+			color: $grey_text
+			padding: 0 10px
+			position: relative
+			line-height: 75px
+			cursor: pointer
+			letter-spacing: 3.3px
+
+			.menu_lv_two
+				width: 100%
+				position: absolute
+				top: 100%
+				left: 0
+				z-index: 55
+				text-align: left
+				display: none
+				background: $black_bg
+
+				.column
+					width: 49.5%
+					float: left
+					text-align: left
+					padding: 15px 5px
+
+					p
+						display: block
+						font-family: Open Sans
+						color: $grey_text
+						font-size: 12px
+						font-weight: bold
+						text-transform: uppercase
+						line-height: 25px
+
+					a
+						display: block
+						font-family: Open Sans
+						color: $grey_text
+						text-transform: none
+						font-size: 13px
+						text-decoration: none
+						letter-spacing: 0
+						line-height: 20px
+						margin: 10px 0
+						padding: 5px
+						color: $grey_text
+
+					a:hover
+						color: $white_text
+						background: rgba(255,255,255, .09)
+					
+					.title
+						width: 100%
+						padding: 4px 13px
+
+						p
+							float: left
+							color: $white_text
+							text-transform: none
+							font-size: 13px
+							line-height: 1em
+							margin: 0
+							letter-spacing: 0
+							padding: 5px 0
+
+						span
+							float: right
+							font-size: 13px
+							line-height: 1em
+							margin: 0
+							padding: 0
+							letter-spacing: 0
+
+							a
+								padding: 5px
+								margin: 0
+								line-height: 1em
+
+					.notif_one_mess
+						background: rgba(255,255,255, .09)
+						margin: 3px 0
+
+						p
+							font-size: 13px
+							color: #fff
+							text-transform: none
+							letter-spacing: 0;
+							float: left
+							line-height: 29px
+							margin: 0 0 0 13px
+
+						i
+							font-size: 13px
+							color: #fff
+							text-transform: 
+							letter-spacing: 0;
+							float: right
+							line-height: 29px
+							margin: 0 13px 0 0
+
+				.full_column
+					width: 100%
+
+			.in_two_column
+				width: 200%
+		
+			.fix_width
+				width: 287px
+
+			span
+				display: inline-block
+				vertical-align: middle
+
+			i
+				vertical-align: middle
+				padding: 0 
+				line-height: 75px
+				color: $grey_text
+
+			a.sign_up
+				width: 83px
+				line-height: 30px
+				background: $light_green
+				text-align: center
+				text-decoration: none
+				color: $white_text
+				font-family: Open Sans
+				display: block
+				margin-top: 5px
+				-webkit-transition: all 0.2s ease-in-out
+				-moz-transition: all 0.2s ease-in-out
+				-ms-transition: all 0.2s ease-in-out
+				-o-transition: all 0.2s ease-in-out
+				transition: all 0.2s ease-in-out
+
+				&:hover
+					background: $dark_green
+					-webkit-transition: all 0.2s ease-in-out
+					-moz-transition: all 0.2s ease-in-out
+					-ms-transition: all 0.2s ease-in-out
+					-o-transition: all 0.2s ease-in-out
+					transition: all 0.2s ease-in-out
+
+		li:hover
+			.menu_lv_two
+				display: block
+				-webkit-transition: all 0.2s ease-in-out
+				-moz-transition: all 0.2s ease-in-out
+				-ms-transition: all 0.2s ease-in-out
+				-o-transition: all 0.2s ease-in-out
+				transition: all 0.2s ease-in-out
+
+		li.user_block
+			float: right
+
+			.img_cont
+				width: 47px
+				height: 47px
+				border-radius: 50%
+				overflow: hidden
+				display: inline-block
+				vertical-align: middle
+				background: #252525
+				text-align: center
+				margin-right: 13px
+
+				img
+					width: 47px
+
+				i
+					line-height: 47px
+					display: block
+					margin: 0 0 0 5px
+					font-size: 24px
+					color: $grey_text
+		
+			.notifications
+				display: inline-block
+				vertical-align: middle
+
+				i
+					line-height: 75px
+					display: inline-block
+					vertical-align: middle
+					position: relative
+					margin-right: 3px
+					font-size: 14px
+					color: $grey_text
+
+					.new_notif
+						background: #7d7d7d
+						display: block
+						border-radius: 50%
+						color: $white_text
+						line-height: 17px
+						text-align: center
+						font-size: 11px
+						position: absolute
+						top: 22px
+						left: -9px
+						padding: 0 2px 1px 6px
+						font-family: 'Open Sans', sans-serif
+
+.filter
+	width: 100%
+	padding-top: 85px
+
+	.one_drop
+		min-height: 24px
+
+	.selectpicker,
+	.filter-option
+		width: 100%
+		font-size: 11px
+		line-height: 24px
+		text-transform: uppercase
+		letter-spacing: 2.2px
+		height: 24px
+
+	.create_alert
+		width: 100%
+		height: 31px
+		border: 2px solid $black_bg
+		display: block
+		margin: 25px 0 49px 0
+		text-transform: uppercase
+		font-size: 11px
+		letter-spacing: 3.3px
+		color: $black_text
+		line-height: 27px
+		text-align: center
+		+mt(.2s)
+		&:hover
+			background: $black_bg
+			color: $white_text
+			text-decoration: none
+			+mt(.2s)
+		
+	.custom_sel
+		display: inline-block
+		width: 100%
+		height: 31px
+		vertical-align: middle
+		font-size: 12px
+		letter-spacing: 1px
+		margin: 25px 0 49px 0
+		color: #777777
+		border: 1px solid #ccc
+		border-radius: 5px
+		padding-left: 7px
+		padding-right: 7px
+		text-transform: uppercase
+		letter-spacing: 2.2px
+
+.block_link
+	position: absolute
+	left: 15px
+	right: 15px
+	bottom: 49px
+	top: 0
+	z-index: 2
+	
+	&:hover~.one_block
+		.for_img
+			.more_inform
+				opacity: 1
+				+mt(0.2s)
+
+.one_block
+	width: 100%
+	border: 1px solid $border-color
+	border-top: none
+	margin-bottom: 49px
+	display: block
+	text-decoration: none !important
+
+	.for_img
+		margin: 0 -1px
+		height: 209px
+		overflow: hidden
+		position: relative
+
+		img
+			width: 100%
+
+		.timer_day
+			position: absolute
+			z-index: 1
+			background: $red
+			padding: 0 10px
+			color: $white_text
+			border-radius: 3px
+			position: absolute
+			right: 11px
+			top: 11px
+			font-weight: bold
+			font-size: 14px
+			line-height: 27px
+
+		.more_inform
+			opacity: 0
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba(255,255,255, 0.96)
+			text-align: center
+			+mt(0.2s)
+
+			.title
+				margin: 0 10px
+				padding-top: 20px
+
+				h3
+					font-family: $dosis
+					font-size: 18px
+					color: $black_text
+					letter-spacing: 5.4px
+					text-transform: uppercase
+					max-width: 100%
+					line-height: 18px
+
+			.small_text
+				margin: 0 10px
+				padding-top: 55px
+
+				p
+					font-size: 14px
+					line-height: 18px
+					color: $grey_text
+					margin-bottom: 0
+
+			.ico_cont
+				width: 100%
+				padding-top: 1px
+				position: relative
+				z-index: 6
+
+				a
+
+					i
+						color: $grey_text
+						font-size: 14px
+						display: inline-block
+						vertical-align: middle
+						margin: 0 7px
+						&:hover
+							color: $black_text
+
+					i.fa-gift
+						font-size: 20px
+
+			.bottom_pr
+				width: 100%
+				padding-top: 15px
+
+				p
+					font-size: 12px
+					color: #747474
+					line-height: 18px
+					margin: 0
+	&:hover
+		.more_inform
+			opacity: 1
+			+mt(0.2s)
+	
+	.title
+		margin: 0 10px
+		padding-top: 15px
+
+		h3
+			font-family: $dosis
+			font-size: 18px
+			color: $black_text
+			letter-spacing: 5.4px
+			text-transform: uppercase
+			float: left
+			line-height: 21px
+
+		span.place
+			float: right
+			color: $grey_text
+			font-size: 11px
+			line-height: 21px
+			text-align: right
+
+			i
+				margin-right: 5px
+	
+	.description
+		margin: 0 10px
+		max-height: 54px
+		overflow: hidden
+		
+		p
+			font-size: 11px
+			line-height: 18px
+			letter-spacing: 0px
+			color: $black_text
+
+	.progress_bar_container
+		margin: 0 10px
+		padding-top: 7px
+
+		.left_text
+			float: left
+			color: $black_text
+			font-size: 14px
+			line-height: 29px
+
+		.right_text
+			float: right
+			text-align: right
+			color: $grey_text
+			font-size: 14px
+
+			b
+				color: $blue_text
+				font-size: 18px
+		
+		.progress_bar
+			width: 100%
+			height: 11px
+			position: relative
+			overflow :hidden
+			background: $progress_bar_bg
+
+			.progress
+				height: 11px
+				background: $light_green
+	
+	.bottom_text
+		margin: 0 10px
+
+		.left_desc
+			float: left
+			color: $grey_text
+			font-size: 11px
+			line-height: 45px
+			letter-spacing: 0.275px
+
+			b
+				font-weight: normal
+				color: $black_text
+				text-transform: uppercase
+				letter-spacing: 2.2px
+
+		.right_desc
+			float: right
+			text-align: right
+			color: $grey_text
+			font-size: 11px
+			line-height: 45px
+			letter-spacing: 0.275px
+
+			b
+				font-weight: normal
+				color: $black_text
+				text-transform: uppercase
+				letter-spacing: 2.2px
+
+.pagination
+	width: 100%
+	margin: 0
+
+	a
+		width: 31px
+		height: 31px
+		border: 1px solid #ebebeb
+		color: #a3a3a3
+		line-height: 31px
+		text-align: center
+		display: inline-block
+		vertical-align: middle
+		+mt(0.2s)
+
+		&:hover
+			border: 1px solid #a3a3a3
+			+mt(0.2s)
+	
+	a.curent
+		border: 1px solid #a3a3a3
+
+.footer_new
+	width: 100%
+	background: $footer_bg
+	padding-top: 42px
+	margin-top: 80px
+
+	.footer_title
+		width: 100%
+		padding-top: 19px
+		margin-bottom: 12px
+
+		h4
+			line-height: 18px
+			letter-spacing: 4.2px
+			font-size: 14px
+			color: $footer_text
+			text-transform: uppercase
+
+	.border_bottom
+		border-bottom: 1px solid $footer_text
+
+	a
+		line-height: 26px
+		font-size: 14px
+		color: $footer_text
+		display: block
+	
+	.company
+		text-align: center
+		padding-top: 88px
+		padding-bottom: 8px
+
+		span
+			font-family: $dosis
+			font-size: 14px
+			color: $footer_text
+			text-transform: uppercase
+			letter-spacing: 4.2px
+			line-height: 18px
+
+		p
+			font-size: 11px
+			color: $footer_text
+			line-height: 18px
+
+//ALWAYS END
+@import "media"
+@import "fonts"
+
+body
+	font-family: 'Open Sans', sans-serif;
