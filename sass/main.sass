@@ -232,7 +232,7 @@ fieldset[disabled] .btn-default:hover
 			text-transform: uppercase
 			font-family: Open Sans
 			font-size: 11px
-			color: $grey_text
+			color: $menu_text_color
 			padding: 0 10px
 			position: relative
 			line-height: 75px
@@ -247,7 +247,7 @@ fieldset[disabled] .btn-default:hover
 				z-index: 55
 				text-align: left
 				display: none
-				background: $black_bg
+				background: $menu_color
 
 				.column
 					width: 49.5%
@@ -258,7 +258,7 @@ fieldset[disabled] .btn-default:hover
 					p
 						display: block
 						font-family: Open Sans
-						color: $grey_text
+						color: $menu_text_color
 						font-size: 12px
 						font-weight: bold
 						text-transform: uppercase
@@ -267,7 +267,7 @@ fieldset[disabled] .btn-default:hover
 					a
 						display: block
 						font-family: Open Sans
-						color: $grey_text
+						color: $menu_text_color
 						text-transform: none
 						font-size: 13px
 						text-decoration: none
@@ -275,7 +275,6 @@ fieldset[disabled] .btn-default:hover
 						line-height: 20px
 						margin: 10px 0
 						padding: 5px
-						color: $grey_text
 
 					a:hover
 						color: $white_text
@@ -410,35 +409,62 @@ fieldset[disabled] .btn-default:hover
 				display: inline-block
 				vertical-align: middle
 
-				i
-					line-height: 75px
-					display: inline-block
-					vertical-align: middle
-					position: relative
-					margin-right: 3px
-					font-size: 14px
-					color: $grey_text
+				a
 
-					.new_notif
-						background: #7d7d7d
-						display: block
-						border-radius: 50%
-						color: $white_text
-						line-height: 17px
-						text-align: center
-						font-size: 11px
-						position: absolute
-						top: 22px
-						left: -9px
-						padding: 0 2px 1px 6px
-						font-family: 'Open Sans', sans-serif
+					i
+						line-height: 75px
+						display: inline-block
+						vertical-align: middle
+						position: relative
+						margin-right: 3px
+						font-size: 14px
+						color: $grey_text
+
+						.new_notif
+							background: #7d7d7d
+							display: block
+							border-radius: 50%
+							color: $white_text
+							line-height: 17px
+							text-align: center
+							font-size: 11px
+							position: absolute
+							top: 22px
+							left: -9px
+							padding: 0 2px 1px 6px
+							font-family: 'Open Sans', sans-serif
+
+.new_title
+	width: 100%
+	background: $footer_bg
+	padding: 63px 0 60px 0
+
+	h2
+		color: $black_text
+		font-size: 30px
+		font-family: $dosis
+		letter-spacing: 9px
+		text-transform: uppercase
+		line-height: 23px
+
+	a,
+	span
+		color: $black_text
+		font-family: $dosis
+		font-size: 12px
+		letter-spacing: 2.7px
+		text-transform: uppercase
+		line-height: 23px
+
+	.curent
+		color: $grey_text
 
 .filter
 	width: 100%
 	padding-top: 85px
 
 	.one_drop
-		min-height: 24px
+		min-height: 38px
 
 	.selectpicker,
 	.filter-option
@@ -452,18 +478,18 @@ fieldset[disabled] .btn-default:hover
 	.create_alert
 		width: 100%
 		height: 31px
-		border: 2px solid $black_bg
+		border: 2px solid $alert_bg
 		display: block
 		margin: 25px 0 49px 0
 		text-transform: uppercase
 		font-size: 11px
 		letter-spacing: 3.3px
-		color: $black_text
+		color: $alert_text
 		line-height: 27px
 		text-align: center
 		+mt(.2s)
 		&:hover
-			background: $black_bg
+			background: $alert_bg
 			color: $white_text
 			text-decoration: none
 			+mt(.2s)
@@ -473,7 +499,7 @@ fieldset[disabled] .btn-default:hover
 		width: 100%
 		height: 31px
 		vertical-align: middle
-		font-size: 12px
+		font-size: 11px
 		letter-spacing: 1px
 		margin: 25px 0 49px 0
 		color: #777777
@@ -496,6 +522,7 @@ fieldset[disabled] .btn-default:hover
 		.for_img
 			.more_inform
 				opacity: 1
+				z-index: 5
 				+mt(0.2s)
 
 .one_block
@@ -538,6 +565,7 @@ fieldset[disabled] .btn-default:hover
 			height: 100%
 			background: rgba(255,255,255, 0.96)
 			text-align: center
+			z-index: 1
 			+mt(0.2s)
 
 			.title
