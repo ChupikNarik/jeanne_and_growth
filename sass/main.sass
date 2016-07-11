@@ -35,6 +35,27 @@ a
 	&:hover
 		text-decoration: none
 
+
+
+.justify_align
+	text-align: justify
+
+
+.justify_align:before
+	content: ''
+	display: block
+	width: 100%
+	height: 0
+					 
+.justify_align:after
+	width: 100%
+	height: 0
+	visibility: hidden
+	overflow: hidden
+	content: ''
+	display: inline-block
+
+
 .dropdown-menu
     position: absolute
     top: 100%
@@ -343,6 +364,7 @@ fieldset[disabled] .btn-default:hover
 				vertical-align: middle
 
 			i
+				display: inline-block
 				vertical-align: middle
 				padding: 0 
 				line-height: 75px
@@ -458,6 +480,89 @@ fieldset[disabled] .btn-default:hover
 
 	.curent
 		color: $grey_text
+
+.user_account
+	width: 100%
+	padding-top: 82px
+
+	.user_name
+		text-align: left
+
+		h2
+			font-size: 24px
+			color: $black_text
+			margin: 0
+			line-height: 1em
+			letter-spacing: 0.6px
+
+	.users_tabs
+		width: 100%
+		height: 31px
+
+		span
+			font-size: 12px
+			letter-spacing: 2.4px
+			line-height: 31px
+			text-transform: uppercase
+			display: inline-block
+			vertical-align: middle
+			cursor: pointer
+			padding: 0 15px
+			border-radius: 19px
+		:hover
+			border: 1px solid $black_bg
+
+		.active
+			border: 1px solid $black_bg
+
+	.user_photo
+		width: 100%
+		border: 1px solid $grey_text
+		background: $footer_bg
+		border-radius: 3px
+		text-align: center
+		margin-top: 9px
+
+		img
+			width: 100%
+
+		span
+			font-size: 36px
+			line-height: 133px
+			margin: 0
+			letter-spacing: 0.9px
+			color: $grey_text
+
+	.user_title
+		width: 100%
+		text-align: right
+
+		p
+			color: $black_text
+			font-size: 14px
+			font-weight: bold
+			letter-spacing: 0.35px
+			line-height: 34px
+			margin: 25px 0 0 0
+			display: inline-block
+			&:first-child
+				margin-top: 52px
+			span
+				color: $grey_text
+
+	.user_input
+		width: 100%
+		height: 34px
+		border: 1px solid $grey_text
+		border-radius: 3px
+		outline: none
+		padding: 0 15px
+		margin: 25px 0 0 0
+		&:first-child
+			margin-top: 52px
+	
+	.width190
+		width: 190px
 
 .filter
 	width: 100%
@@ -787,6 +892,260 @@ fieldset[disabled] .btn-default:hover
 			color: $footer_text
 			line-height: 18px
 
+.main_block
+	width: 100%
+	min-width: 320px
+	background: url(../img/bg_img.png)
+	background-repeat: no-repeat
+	min-height: 397px
+	background-size: cover
+	
+	.red_opacity
+		width: 100%
+		min-height: 397px
+		background: $red_opacity_color
+		position: relative
+
+		.vertical_align_container
+			width: 90%
+			text-align: left
+			position: absolute 
+			left: 50%
+			top: 50%
+			-ms-transform: translate(-50%,-50%)
+			-webkit-transform: translate(-50%,-50%)
+			transform: translate(-50%,-50%)
+
+			h2
+				font-family: Open Sans
+				font-weight: bold
+				font-size: 20px
+				color: $white_text
+				margin-bottom: 10px
+			
+			p
+				font-family: Open Sans
+				font-weight: normal
+				color: $white_text
+				font-size: 16px
+				margin-bottom: 10px
+
+				a
+					font-family: Open Sans
+					font-weight: normal
+					color: $yellow_text
+					font-size: 16px
+
+			span
+				font-family: Open Sans
+				font-weight: normal
+				color: $white_text
+				font-size: 14px
+				display: block
+				margin-left: 15px
+				line-height: 24px
+	
+	.logo_container
+		width: 100%
+		min-height: 397px
+		position: relative
+
+		.vertical_align_container
+			width: 100%
+			position: absolute 
+			left: 50%
+			top: 60%
+			-ms-transform: translate(-50%,-60%)
+			-webkit-transform: translate(-50%,-60%)
+			transform: translate(-50%,-60%)
+
+			.jeane_logo
+				width: 100%
+
+				img
+					margin: 0 auto
+					display: block
+
+			.our_logo
+				text-align: center
+
+				p
+					color: $white_text
+					font-size: 14px
+					font-family: Open Sans
+					text-transform: uppercase
+					margin-bottom: 0
+					margin-top: 15px
+
+.text_block_white
+	width: 100%
+	position: relative
+	z-index: 5
+	min-height: 61px
+	background: $white_text
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75)
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75)
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75)
+
+	p
+		width: 90%
+		font-family: Open Sans
+		font-size: 12px
+		text-transform: uppercase
+		display: block
+		text-align: left
+		vertical-align: middle
+		margin: 0 auto
+		padding-top: 10px
+
+	.text_right_align
+		text-align: center
+		width: 100%
+
+		.light_green
+			width: 182px
+			line-height: 42px
+			color: $white_text
+			background: $light_green
+			text-align: center
+			font-family: Open Sans
+			text-transform: uppercase
+			text-decoration: none
+			font-size: 16px
+			display: inline-block
+			vertical-align: middle
+			margin-top: 9px
+			-webkit-transition: all 0.2s ease-in-out
+			-moz-transition: all 0.2s ease-in-out
+			-ms-transition: all 0.2s ease-in-out
+			-o-transition: all 0.2s ease-in-out
+			transition: all 0.2s ease-in-out
+			&:hover
+				background: $dark_green
+				-webkit-transition: all 0.2s ease-in-out
+				-moz-transition: all 0.2s ease-in-out
+				-ms-transition: all 0.2s ease-in-out
+				-o-transition: all 0.2s ease-in-out
+				transition: all 0.2s ease-in-out
+
+		.dark_green
+			width: 182px
+			line-height: 42px
+			color: $white_text
+			background: $dark_green
+			text-align: center
+			font-family: Open Sans
+			text-transform: uppercase
+			text-decoration: none
+			font-size: 16px
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px;
+			margin-top: 9px
+			-webkit-transition: all 0.2s ease-in-out
+			-moz-transition: all 0.2s ease-in-out
+			-ms-transition: all 0.2s ease-in-out
+			-o-transition: all 0.2s ease-in-out
+			transition: all 0.2s ease-in-out
+			&:hover
+				background: $light_green
+				-webkit-transition: all 0.2s ease-in-out
+				-moz-transition: all 0.2s ease-in-out
+				-ms-transition: all 0.2s ease-in-out
+				-o-transition: all 0.2s ease-in-out
+				transition: all 0.2s ease-in-out
+		
+		.circle_or
+			width: 46px
+			height: 42px
+			border-radius: 21px
+			background: $white_text
+			line-height: 42px
+			font-family: Open Sans
+			font-style: 14px
+			text-transform: uppercase
+			color: $dark_green
+			text-align: center
+			display: inline-block
+			vertical-align: middle
+			position: relative
+			z-index: 5
+			margin: 9px -20px 0 -20px
+
+.jeanne_footer
+	min-height: 221px
+	background: url(../img/footer_bg.png)
+	background-repeat: repeat
+
+	.container_block
+		min-height: 121px
+		margin: 50px 0
+		border-right: 1px solid $grey_bg
+		padding-top: 15px
+		display: inline-block
+		text-align: left
+		padding-right: 15px
+
+		img
+			max-width: 95%
+			display: block
+			margin: 0
+
+		h4
+			font-family: Open Sans
+			font-size: 18px
+			color: $blue_text
+			font-weight: bold
+			margin-bottom: 0;
+
+		p
+			font-family: Open Sans
+			font-style: 16px
+			color: $black
+			margin: 0 15px 0 0
+
+	.small_container_block
+		min-height: 121px
+		max-width: 300px
+		margin: 50px auto
+		text-align: center
+		padding-top: 15px
+
+		p
+			font-family: Open Sans
+			font-size: 18px
+			color: $light_green
+			font-weight: bold
+			text-transform: uppercase
+			line-height: 1em
+			margin: 0
+
+			b
+				color: $blue_text
+		a
+			width: 100%
+			color: $white_text
+			background: $blue_text
+			display: block
+			margin: 15px 0
+			text-transform: uppercase
+			text-decoration: none
+			font-size: 14px
+			text-align: center
+			line-height: 30px
+			-webkit-transition: all 0.2s ease-in-out
+			-moz-transition: all 0.2s ease-in-out
+			-ms-transition: all 0.2s ease-in-out
+			-o-transition: all 0.2s ease-in-out
+			transition: all 0.2s ease-in-out
+
+			&:hover
+				background: $blue_light
+				-webkit-transition: all 0.2s ease-in-out
+				-moz-transition: all 0.2s ease-in-out
+				-ms-transition: all 0.2s ease-in-out
+				-o-transition: all 0.2s ease-in-out
+				transition: all 0.2s ease-in-out
 //ALWAYS END
 @import "media"
 @import "fonts"
