@@ -8,39 +8,23 @@
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.min.css" type="text/css" charset="utf-8"/>
-		<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" charset="utf-8"/>
-		<link rel="stylesheet" href="css/bootstrap-select.css">
 </head>
 
 <body>
 	<nav class="new_menu">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-3 col-md-12 col-xs-10 text-xs-center">
+				<div class="col-lg-4 col-md-12 col-xs-10 text-xs-center">
 					<a href="" class="new_logo">
-						<img src="img/gf_logo_nosub.png" alt="">
+						<img src="img/main_logo.png" alt="">
 					</a>
 				</div>
-				<div class="col-lg-9 col-md-12 col-xs-2 no_relative">
+				<div class="col-lg-8 col-md-12 col-xs-2 no_relative tex">
 					<i class="fa fa-navicon show_new_menu" id="toggle_click"></i>
-					<ul class="menu" id="toggle_menu">
-						<li>
-							<span>About us</span>
-							<i class="fa fa-angle-down"></i>
-							<div class="menu_lv_two">
-								<div class="column full_column">
-									<a href="">Overview</a>
-									<a href="">Team</a>
-									<a href="">Partners</a>
-									<a href="">Contact Us</a>
-									<a href="">Careers</a>
-									<a href="">In the News</a>
-								</div>
-							</div>
-						</li>
+					<ul class="menu text-lg-right" id="toggle_menu">
 						<li>
 							<span>Resource center</span>
-							<i class="fa fa-angle-down"></i>
+							<i class="fa fa-sort-down"></i>
 							<div class="menu_lv_two in_two_column">
 								<div class="column">
 									<p>For Investors</p>
@@ -61,7 +45,7 @@
 						</li>
 						<li>
 							<span>Advisor network</span>
-							<i class="fa fa-angle-down"></i>
+							<i class="fa fa-sort-down"></i>
 							<div class="menu_lv_two">
 								<div class="column full_column">
 									<a href="">About</a>
@@ -69,606 +53,56 @@
 								</div>
 							</div>
 						</li>
-						<ol class="for_user">
-							<li class="user_block">
-								<div class="img_cont">
-									<i class="fa fa-user"></i>
+						<li>
+							<span>About growthfountain</span>
+							<i class="fa fa-sort-down"></i>
+							<div class="menu_lv_two">
+								<div class="column full_column">
+									<a href="">Overview</a>
+									<a href="">Team</a>
+									<a href="">Partners</a>
+									<a href="">Contact Us</a>
+									<a href="">Careers</a>
+									<a href="">In the News</a>
 								</div>
-								<span>Maria Kravchuk</span>
-								<i class="fa fa-angle-down"></i>
-								<div class="menu_lv_two">
-									<div class="column full_column">
-										<a href="">Account</a>
-										<a href="">Issuer Dashboard</a>
-										<a href="">Investor Dashboard</a>
-										<a href="">Log Out</a>
-									</div>
-								</div>
-							</li>
-							<li class="user_block">
-								<div class="notification">
-									<a href="">
-										<i class="fa fa-envelope-o"></i>
-									</a>
-								</div>
-							</li>
-							<li class="user_block">
-								<div class="notifications">
-									<a href="">
-										<i class="fa fa-bell-o">
-											<span class="new_notif">5</span>
-										</i>
-									</a>
-								</div>
-								<div class="menu_lv_two fix_width">
-									<div class="column full_column">
-										<div class="title">
-											<p><b>5 pending</b> comments</p>
-											<span><a href="">view all</a></span>
-											<div class="clear"></div>
-										</div>
-										<div class="notif_one_mess">
-											<p>Maria Kravchuk wrote...</p>
-											<i>Just now</i>
-											<div class="clear"></div>
-										</div>
-										<div class="notif_one_mess">
-											<p>Maria Kravchuk wrote...</p>
-											<i>Just now</i>
-											<div class="clear"></div>
-										</div>
-										<div class="notif_one_mess">
-											<p>Maria Kravchuk wrote...</p>
-											<i>Just now</i>
-											<div class="clear"></div>
-										</div>
-										<div class="notif_one_mess">
-											<p>Maria Kravchuk wrote...</p>
-											<i>Just now</i>
-											<div class="clear"></div>
-										</div>
-									</div>
-								</div>
-							</li>
-							<div class="clear"></div>
-						</ol>
+							</div>
+						</li>
+						<li>
+							<a href="" class="sign_up">Sign up</a>
+						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</nav>
-	
-	<section class="filter">
-		<form>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3">
-						<div class="one_drop">
-							<select class="selectpicker" multiple="">
-								<option>Fintech</option>
-								<option>Internet</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="one_drop">
-							<select class="selectpicker">
-								<option>Stage</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="one_drop">
-							<select class="selectpicker">
-								<option>Locations</option>
-							</select>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="one_drop">
-							<select class="selectpicker">
-								<option>Deal type</option>
-							</select>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-8"></div>
-					<div class="col-lg-2">
-						<a href="" class="create_alert">create alert</a>
-					</div>
-					<div class="col-lg-2">				
-						<select class="custom_sel"><option>Order by</option><option>By Date</option></select>
-					</div>
-				</div>
-			</div>
-		</form>
-	</section>
 
-	<section>
+	<section class="main_block">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
-					<a href="3" class="block_link"></a>
-					<div class="one_block">
-						<div class="for_img">
-							<img src="img/other_img/1.png" alt="">
-							<div class="more_inform">
-								<div class="title">
-									<h3>Pre money valuation $300k</h3>
-								</div>
-								<div class="small_text">
-									<p>Merchandising Made Easy for the Creators of this World</p>
-								</div>
-								<div class="ico_cont">
-									<a href="1">	
-										<i class="fa fa-users"></i>
-									</a>
-									<a href="2">
-										<i class="fa fa-gift"></i>
-									</a>
-								</div>
-								<div class="bottom_pr">
-									<p>Price per share: $112</p>
-									<p>Minimum investment: $200</p>
-								</div>
-							</div>
-						</div>
-						<div class="title">
-							<h3>company name</h3>
-							<span class="place"><i class="fa fa-map-marker"></i>New York, NY</span>
-							<div class="clear"></div>
-						</div>
-						<div class="description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
-						</div>
-						<div class="progress_bar_container">
-							<span class="left_text">55% Funded</span>
-							<span class="right_text"><b>$157,678</b> of $300K</span>
-							<div class="clear"></div>
-							<div class="progress_bar">
-								<div class="progress" style="width:55%"></div>
-							</div>
-						</div>
-						<div class="bottom_text">
-							<span class="left_desc">
-								<b>Security:</b> Lorem ipsum
-							</span>
-							<span class="right_desc">
-								<b>Industry:</b> Lorem ipsum
-							</span>
-							<div class="clear"></div>
+				<div class="col-lg-6 col-md-12">
+					<div class="red_opacity">
+						<div class="vert"></div>
+						<div class="vertical_align_container">
+							<h2>A new way to invest or raise capital.</h2>
+							<p>Through our partnership with <a href="">Growth Fountain</a>, we're pleased to introduce Equity Crowdfunding. With this innovative program:</p>
+							<span>- Investors and entrepreneurs can connect to enrich each other.</span>
+							<span>- Investors receive equity for their contributions to small businesses.</span>
+							<span>- Entrepreneurs can raise capital for their businesses through these contributions.</span>
+							<span>- Opportunities are available on local and national levels.</span>
+							<span>- Economic growth is spurred by greater exposure and interest.</span>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<a href="3" class="block_link"></a>
-					<div class="one_block">
-						<div class="for_img">
-							<img src="img/other_img/2.png" alt="">
-							<span class="timer_day">19 Days Left</span>
-							<div class="more_inform">
-								<div class="title">
-									<h3>Pre money valuation $300k</h3>
-								</div>
-								<div class="small_text">
-									<p>Merchandising Made Easy for the Creators of this World</p>
-								</div>
-								<div class="ico_cont">
-									<a href="1">	
-										<i class="fa fa-users"></i>
-									</a>
-									<a href="2">
-										<i class="fa fa-gift"></i>
-									</a>
-								</div>
-								<div class="bottom_pr">
-									<p>Price per share: $112</p>
-									<p>Minimum investment: $200</p>
-								</div>
+				<div class="col-lg-6 col-md-12">
+					<div class="logo_container">
+						<div class="vertical_align_container">
+							<div class="jeane_logo">
+								<img src="img/logo.png" alt="">
 							</div>
-						</div>
-						<div class="title">
-							<h3>company name</h3>
-							<span class="place"><i class="fa fa-map-marker"></i>New York, NY</span>
-							<div class="clear"></div>
-						</div>
-						<div class="description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
-						</div>
-						<div class="progress_bar_container">
-							<span class="left_text">Less than 20% Funded</span>
-							<span class="right_text"><b>$15,000</b></span>
-							<div class="clear"></div>
-							<div class="progress_bar">
-								<div class="progress" style="width:20%"></div>
+							<div class="our_logo">
+								<p>Powered by</p>
+								<img src="img/gf_logo_nosub.png" alt="">
 							</div>
-						</div>
-						<div class="bottom_text">
-							<span class="left_desc">
-								<b>Security:</b> Lorem ipsum
-							</span>
-							<span class="right_desc">
-								<b>Industry:</b> Lorem ipsum
-							</span>
-							<div class="clear"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<a href="3" class="block_link"></a>
-					<div class="one_block">
-						<div class="for_img">
-							<img src="img/other_img/3.png" alt="">
-							<div class="more_inform">
-								<div class="title">
-									<h3>Pre money valuation $300k</h3>
-								</div>
-								<div class="small_text">
-									<p>Merchandising Made Easy for the Creators of this World</p>
-								</div>
-								<div class="ico_cont">
-									<a href="1">	
-										<i class="fa fa-users"></i>
-									</a>
-									<a href="2">
-										<i class="fa fa-gift"></i>
-									</a>
-								</div>
-								<div class="bottom_pr">
-									<p>Price per share: $112</p>
-									<p>Minimum investment: $200</p>
-								</div>
-							</div>
-						</div>
-						<div class="title">
-							<h3>company name</h3>
-							<span class="place"><i class="fa fa-map-marker"></i>New York, NY</span>
-							<div class="clear"></div>
-						</div>
-						<div class="description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
-						</div>
-						<div class="progress_bar_container">
-							<span class="left_text">Less than 20% Funded</span>
-							<span class="right_text"><b>$10,678</b></span>
-							<div class="clear"></div>
-							<div class="progress_bar">
-								<div class="progress" style="width:20%"></div>
-							</div>
-						</div>
-						<div class="bottom_text">
-							<span class="left_desc">
-								<b>Security:</b> Lorem ipsum
-							</span>
-							<span class="right_desc">
-								<b>Industry:</b> Lorem ipsum
-							</span>
-							<div class="clear"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4">
-					<a href="3" class="block_link"></a>
-					<div class="one_block">
-						<div class="for_img">
-							<img src="img/other_img/4.png" alt="">
-							<span class="timer_day">19 Days Left</span>
-							<div class="more_inform">
-								<div class="title">
-									<h3>Pre money valuation $300k</h3>
-								</div>
-								<div class="small_text">
-									<p>Merchandising Made Easy for the Creators of this World</p>
-								</div>
-								<div class="ico_cont">
-									<a href="1">	
-										<i class="fa fa-users"></i>
-									</a>
-									<a href="2">
-										<i class="fa fa-gift"></i>
-									</a>
-								</div>
-								<div class="bottom_pr">
-									<p>Price per share: $112</p>
-									<p>Minimum investment: $200</p>
-								</div>
-							</div>
-						</div>
-						<div class="title">
-							<h3>company name</h3>
-							<span class="place"><i class="fa fa-map-marker"></i>New York, NY</span>
-							<div class="clear"></div>
-						</div>
-						<div class="description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
-						</div>
-						<div class="progress_bar_container">
-							<span class="left_text">Less than 20% Funded</span>
-							<span class="right_text"><b>$12,000</b></span>
-							<div class="clear"></div>
-							<div class="progress_bar">
-								<div class="progress" style="width:20%"></div>
-							</div>
-						</div>
-						<div class="bottom_text">
-							<span class="left_desc">
-								<b>Security:</b> Lorem ipsum
-							</span>
-							<span class="right_desc">
-								<b>Industry:</b> Lorem ipsum
-							</span>
-							<div class="clear"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<a href="3" class="block_link"></a>
-					<div class="one_block">
-						<div class="for_img">
-							<img src="img/other_img/5.png" alt="">
-							<span class="timer_day">19 Days Left</span>
-							<div class="more_inform">
-								<div class="title">
-									<h3>Pre money valuation $300k</h3>
-								</div>
-								<div class="small_text">
-									<p>Merchandising Made Easy for the Creators of this World</p>
-								</div>
-								<div class="ico_cont">
-									<a href="1">	
-										<i class="fa fa-users"></i>
-									</a>
-									<a href="2">
-										<i class="fa fa-gift"></i>
-									</a>
-								</div>
-								<div class="bottom_pr">
-									<p>Price per share: $112</p>
-									<p>Minimum investment: $200</p>
-								</div>
-							</div>
-						</div>
-						<div class="title">
-							<h3>company name</h3>
-							<span class="place"><i class="fa fa-map-marker"></i>New York, NY</span>
-							<div class="clear"></div>
-						</div>
-						<div class="description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
-						</div>
-						<div class="progress_bar_container">
-							<span class="left_text">55% Funded</span>
-							<span class="right_text"><b>$157,678</b> of $300K</span>
-							<div class="clear"></div>
-							<div class="progress_bar">
-								<div class="progress" style="width:55%"></div>
-							</div>
-						</div>
-						<div class="bottom_text">
-							<span class="left_desc">
-								<b>Security:</b> Lorem ipsum
-							</span>
-							<span class="right_desc">
-								<b>Industry:</b> Lorem ipsum
-							</span>
-							<div class="clear"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<a href="3" class="block_link"></a>
-					<div class="one_block">
-						<div class="for_img">
-							<img src="img/other_img/6.png" alt="">
-							<div class="more_inform">
-								<div class="title">
-									<h3>Pre money valuation $300k</h3>
-								</div>
-								<div class="small_text">
-									<p>Merchandising Made Easy for the Creators of this World</p>
-								</div>
-								<div class="ico_cont">
-									<a href="1">	
-										<i class="fa fa-users"></i>
-									</a>
-									<a href="2">
-										<i class="fa fa-gift"></i>
-									</a>
-								</div>
-								<div class="bottom_pr">
-									<p>Price per share: $112</p>
-									<p>Minimum investment: $200</p>
-								</div>
-							</div>
-						</div>
-						<div class="title">
-							<h3>company name</h3>
-							<span class="place"><i class="fa fa-map-marker"></i>New York, NY</span>
-							<div class="clear"></div>
-						</div>
-						<div class="description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
-						</div>
-						<div class="progress_bar_container">
-							<span class="left_text">Less than 20% Funded</span>
-							<span class="right_text"><b>$9,650</b></span>
-							<div class="clear"></div>
-							<div class="progress_bar">
-								<div class="progress" style="width:20%"></div>
-							</div>
-						</div>
-						<div class="bottom_text">
-							<span class="left_desc">
-								<b>Security:</b> Lorem ipsum
-							</span>
-							<span class="right_desc">
-								<b>Industry:</b> Lorem ipsum
-							</span>
-							<div class="clear"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-4">
-					<a href="3" class="block_link"></a>
-					<div class="one_block">
-						<div class="for_img">
-							<img src="img/other_img/7.png" alt="">
-							<div class="more_inform">
-								<div class="title">
-									<h3>Pre money valuation $300k</h3>
-								</div>
-								<div class="small_text">
-									<p>Merchandising Made Easy for the Creators of this World</p>
-								</div>
-								<div class="ico_cont">
-									<a href="1">	
-										<i class="fa fa-users"></i>
-									</a>
-									<a href="2">
-										<i class="fa fa-gift"></i>
-									</a>
-								</div>
-								<div class="bottom_pr">
-									<p>Price per share: $112</p>
-									<p>Minimum investment: $200</p>
-								</div>
-							</div>
-						</div>
-						<div class="title">
-							<h3>company name</h3>
-							<span class="place"><i class="fa fa-map-marker"></i>New York, NY</span>
-							<div class="clear"></div>
-						</div>
-						<div class="description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
-						</div>
-						<div class="progress_bar_container">
-							<span class="left_text">Less than 20% Funded</span>
-							<span class="right_text"><b>$11,600</b></span>
-							<div class="clear"></div>
-							<div class="progress_bar">
-								<div class="progress" style="width:20%"></div>
-							</div>
-						</div>
-						<div class="bottom_text">
-							<span class="left_desc">
-								<b>Security:</b> Lorem ipsum
-							</span>
-							<span class="right_desc">
-								<b>Industry:</b> Lorem ipsum
-							</span>
-							<div class="clear"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<a href="3" class="block_link"></a>
-					<div class="one_block">
-						<div class="for_img">
-							<img src="img/other_img/8.png" alt="">
-							<div class="more_inform">
-								<div class="title">
-									<h3>Pre money valuation $300k</h3>
-								</div>
-								<div class="small_text">
-									<p>Merchandising Made Easy for the Creators of this World</p>
-								</div>
-								<div class="ico_cont">
-									<a href="1">	
-										<i class="fa fa-users"></i>
-									</a>
-									<a href="2">
-										<i class="fa fa-gift"></i>
-									</a>
-								</div>
-								<div class="bottom_pr">
-									<p>Price per share: $112</p>
-									<p>Minimum investment: $200</p>
-								</div>
-							</div>
-						</div>
-						<div class="title">
-							<h3>company name</h3>
-							<span class="place"><i class="fa fa-map-marker"></i>New York, NY</span>
-							<div class="clear"></div>
-						</div>
-						<div class="description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
-						</div>
-						<div class="progress_bar_container">
-							<span class="left_text">55% Funded</span>
-							<span class="right_text"><b>$157,678</b> of $300K</span>
-							<div class="clear"></div>
-							<div class="progress_bar">
-								<div class="progress" style="width:55%"></div>
-							</div>
-						</div>
-						<div class="bottom_text">
-							<span class="left_desc">
-								<b>Security:</b> Lorem ipsum
-							</span>
-							<span class="right_desc">
-								<b>Industry:</b> Lorem ipsum
-							</span>
-							<div class="clear"></div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<a href="3" class="block_link"></a>
-					<div class="one_block">
-						<div class="for_img">
-							<img src="img/other_img/9.png" alt="">
-							<div class="more_inform">
-								<div class="title">
-									<h3>Pre money valuation $300k</h3>
-								</div>
-								<div class="small_text">
-									<p>Merchandising Made Easy for the Creators of this World</p>
-								</div>
-								<div class="ico_cont">
-									<a href="1">	
-										<i class="fa fa-users"></i>
-									</a>
-									<a href="2">
-										<i class="fa fa-gift"></i>
-									</a>
-								</div>
-								<div class="bottom_pr">
-									<p>Price per share: $112</p>
-									<p>Minimum investment: $200</p>
-								</div>
-							</div>
-						</div>
-						<div class="title">
-							<h3>company name</h3>
-							<span class="place"><i class="fa fa-map-marker"></i>New York, NY</span>
-							<div class="clear"></div>
-						</div>
-						<div class="description">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco...</p>
-						</div>
-						<div class="progress_bar_container">
-							<span class="left_text">Less than 20% Funded</span>
-							<span class="right_text"><b>$10,370</b></span>
-							<div class="clear"></div>
-							<div class="progress_bar">
-								<div class="progress" style="width:20%"></div>
-							</div>
-						</div>
-						<div class="bottom_text">
-							<span class="left_desc">
-								<b>Security:</b> Lorem ipsum
-							</span>
-							<span class="right_desc">
-								<b>Industry:</b> Lorem ipsum
-							</span>
-							<div class="clear"></div>
 						</div>
 					</div>
 				</div>
@@ -676,73 +110,46 @@
 		</div>
 	</section>
 
-	<section class="pagination">
+	<section class="text_block_white">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<a href="" class="curent">1</a>
-					<a href="">2</a>
-					<a href=""><i class="fa fa-angle-right"></i></a>
+				<div class="col-lg-6 col-md-12">
+					<p><b>To get started, </b>click on “Invest” to browse current opportunities or “Raise Capital” to create a new fund-sourcing campaign.</p>
+				</div>
+				<div class="col-lg-6 col-md-12">
+					<div class="text_right_align">
+						<a href="" class="light_green">Invest</a>
+						<div class="circle_or">or</div>
+						<a href="" class="dark_green">Raise capital</a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<footer class="footer_new">
+	<section class="jeanne_footer">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-3">
-					<div class="footer_title border_bottom">
-						<h4>About us</h4>
+			<div class="row text-lg-center">
+				<div class="col-lg-4 col-md-6 col-sm-12 text-md-right">
+					<div class="container_block">
+						<img src="img/footer_com_logo.png" alt="">
 					</div>
-					<a href="">Overview</a>
-					<a href="">Team</a>
-					<a href="">Partners</a>
-					<a href="">Contacy Us</a>
-					<a href="">Careers</a>
-					<a href="">In the News</a>
-					<a href="">FAQ</a>
-					<a href="">Blog</a>
 				</div>
-				<div class="col-lg-3">
-					<div class="footer_title border_bottom">
-						<h4>Investor resources</h4>
+				<div class="col-lg-6 col-md-6 col-sm-12">
+					<div class="container_block">
+						<h4>Need help getting your idea started?</h4>
+						<p>"Build" Business Solutions offer everything from business loans and credit cards to business checking and savings products. Let us help you take your concept or business to the next level.</p>
 					</div>
-					<a href="">Investor Tutorial</a>
-					<a href="">Education Material</a>
-					<div class="footer_title border_bottom">
-						<h4>Business recources</h4>
-					</div>
-					<a href="">Business Tutorial</a>
-					<a href="">Success Guide</a>
-					<a href="">Capital Raise Calculator</a>
-					<a href="">What's me Business Worth?</a>
 				</div>
-				<div class="col-lg-3">
-					<div class="footer_title border_bottom">
-						<h4>Advisor network</h4>
-					</div>
-					<a href="">About</a>
-					<a href="">FAQ</a>
-				</div>
-				<div class="col-lg-3">
-					<div class="footer_title border_bottom">
-						<h4>Legal</h4>
-					</div>
-					<a href="">Terms</a>
-					<a href="">Privacy</a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="company">
-						<span>©GROWTHFOUNTAIN 2016.</span>
-						<p>Made with love for great people</p>
+				<div class="col-lg-2 col-md-12">
+					<div class="small_container_block">
+						<p>Ready to <b>build</b> your business</p>
+						<a href="#">Start today</a>
 					</div>
 				</div>
 			</div>
 		</div>
-	</footer>
+	</section>
 	<!-- Здесь пишем код -->
 
 
@@ -756,10 +163,9 @@
 	<![endif]-->
 
 	<!-- Load Scripts Start -->
-		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/my_script.js"></script>
-		<script src="js/bootstrap-select.js"></script>
+         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	<script src="js/my_script.js"></script>
 	<!-- Load Scripts End -->
 
 </body>
